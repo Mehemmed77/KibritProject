@@ -1,0 +1,212 @@
+[
+  {
+    "id": 1,
+    "name": "Alpha University",
+    "region": "North",
+    "yearFounded": 1985,
+    "corpora": [
+      {
+        "id": 1,
+        "name": "Corpus A1",
+        "imageUrl": "https://via.placeholder.com/150"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Beta Institute of Technology",
+    "region": "West",
+    "yearFounded": 1992,
+    "corpora": [
+      {
+        "id": 2,
+        "name": "Corpus B1",
+        "imageUrl": "https://via.placeholder.com/150"
+      },
+      {
+        "id": 3,
+        "name": "Corpus B2",
+        "imageUrl": "https://via.placeholder.com/150"
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Gamma State University",
+    "region": "South",
+    "yearFounded": 1975,
+    "corpora": []
+  },
+  {
+    "id": 4,
+    "name": "Delta College",
+    "region": "East",
+    "yearFounded": 2001,
+    "corpora": [
+      {
+        "id": 4,
+        "name": "Corpus D1",
+        "imageUrl": "https://via.placeholder.com/150"
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "name": "Epsilon University",
+    "region": "North",
+    "yearFounded": 1960,
+    "corpora": []
+  },
+  {
+    "id": 6,
+    "name": "Zeta Technical University",
+    "region": "West",
+    "yearFounded": 1999,
+    "corpora": [
+      {
+        "id": 5,
+        "name": "Corpus Z1",
+        "imageUrl": "https://via.placeholder.com/150"
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "name": "Eta National University",
+    "region": "North",
+    "yearFounded": 1980,
+    "corpora": []
+  },
+  {
+    "id": 8,
+    "name": "Theta Polytechnic",
+    "region": "South",
+    "yearFounded": 2005,
+    "corpora": [
+      {
+        "id": 6,
+        "name": "Corpus T1",
+        "imageUrl": "https://via.placeholder.com/150"
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "name": "Iota College of Arts",
+    "region": "East",
+    "yearFounded": 1995,
+    "corpora": []
+  },
+  {
+    "id": 10,
+    "name": "Kappa International University",
+    "region": "North",
+    "yearFounded": 2010,
+    "corpora": [
+      {
+        "id": 7,
+        "name": "Corpus K1",
+        "imageUrl": "https://via.placeholder.com/150"
+      },
+      {
+        "id": 8,
+        "name": "Corpus K2",
+        "imageUrl": "https://via.placeholder.com/150"
+      }
+    ]
+  },
+  {
+    "id": 11,
+    "name": "Lambda University",
+    "region": "West",
+    "yearFounded": 1988,
+    "corpora": []
+  },
+  {
+    "id": 12,
+    "name": "Mu Science Institute",
+    "region": "South",
+    "yearFounded": 1970,
+    "corpora": []
+  },
+  {
+    "id": 13,
+    "name": "Nu College of Engineering",
+    "region": "East",
+    "yearFounded": 1998,
+    "corpora": [
+      {
+        "id": 9,
+        "name": "Corpus N1",
+        "imageUrl": "https://via.placeholder.com/150"
+      }
+    ]
+  },
+  {
+    "id": 14,
+    "name": "Xi University",
+    "region": "North",
+    "yearFounded": 1965,
+    "corpora": []
+  },
+  {
+    "id": 15,
+    "name": "Omicron Technical College",
+    "region": "West",
+    "yearFounded": 2002,
+    "corpora": [
+      {
+        "id": 10,
+        "name": "Corpus O1",
+        "imageUrl": "https://via.placeholder.com/150"
+      }
+    ]
+  },
+  {
+    "id": 16,
+    "name": "Pi State University",
+    "region": "South",
+    "yearFounded": 1983,
+    "corpora": []
+  },
+  {
+    "id": 17,
+    "name": "Rho Polytechnic Institute",
+    "region": "East",
+    "yearFounded": 1997,
+    "corpora": []
+  },
+  {
+    "id": 18,
+    "name": "Sigma University",
+    "region": "North",
+    "yearFounded": 2008,
+    "corpora": [
+      {
+        "id": 11,
+        "name": "Corpus S1",
+        "imageUrl": "https://via.placeholder.com/150"
+      }
+    ]
+  },
+  {
+    "id": 19,
+    "name": "Tau International College",
+    "region": "West",
+    "yearFounded": 1978,
+    "corpora": []
+  },
+  {
+    "id": 20,
+    "name": "Upsilon University",
+    "region": "South",
+    "yearFounded": 1989,
+    "corpora": [
+      {
+        "id": 12,
+        "name": "Corpus U1",
+        "imageUrl": "https://via.placeholder.com/150"
+      }
+    ]
+  }
+]

@@ -1,5 +1,6 @@
 body {
   background: radial-gradient(circle at center, #f0f4f8 0%, #e0e7ef 50%, #cfd8e3 100%);
+  overflow-x:hidden;
 }
 
 a {

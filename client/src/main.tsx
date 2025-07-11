@@ -6,6 +6,7 @@ import './css/index.css';
 import LeftMenu from './components/LeftMenu';
 import HomePage from './pages/HomePage';
 import LoginPage from './pages/LoginPage';
+import UniversitiesPage from './pages/UniversitiesPage';
 
 createRoot(document.getElementById('root')!).render(
     <StrictMode>
@@ -14,6 +15,7 @@ createRoot(document.getElementById('root')!).render(
             <Routes>
                 <Route path="/" element={<LeftMenu />}>
                     <Route index element={<HomePage />} />
+                    <Route path="/universities/" element={<UniversitiesPage />} />
                 </Route>
                 <Route path='/login/' element={<LoginPage />} />
             </Routes>

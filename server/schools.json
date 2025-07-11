@@ -1,0 +1,66 @@
+[
+  {
+    "id": 1,
+    "name": "Green Valley Primary School",
+    "type": "Primary",
+    "region": "North",
+    "yearFounded": 1998,
+    "studentCount": 320
+  },
+  {
+    "id": 2,
+    "name": "Lakeside Secondary School",
+    "type": "Secondary",
+    "region": "West",
+    "yearFounded": 2005,
+    "studentCount": 450
+  },
+  {
+    "id": 3,
+    "name": "Mountainview International School",
+    "type": "International",
+    "region": "South",
+    "yearFounded": 2012,
+    "studentCount": 600
+  },
+  {
+    "id": 4,
+    "name": "Sunrise Private School",
+    "type": "Private",
+    "region": "East",
+    "yearFounded": 1995,
+    "studentCount": 200
+  },
+  {
+    "id": 5,
+    "name": "Riverdale Primary School",
+    "type": "Primary",
+    "region": "North",
+    "yearFounded": 2000,
+    "studentCount": 350
+  },
+  {
+    "id": 6,
+    "name": "Hillside Secondary School",
+    "type": "Secondary",
+    "region": "West",
+    "yearFounded": 1985,
+    "studentCount": 480
+  },
+  {
+    "id": 7,
+    "name": "Bright Future International",
+    "type": "International",
+    "region": "South",
+    "yearFounded": 2010,
+    "studentCount": 550
+  },
+  {
+    "id": 8,
+    "name": "Elite Private School",
+    "type": "Private",
+    "region": "East",
+    "yearFounded": 1992,
+    "studentCount": 180
+  }
+]

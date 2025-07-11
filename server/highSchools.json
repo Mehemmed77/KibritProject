@@ -1,0 +1,44 @@
+[
+  {
+    "id": 1,
+    "name": "Lincoln High School",
+    "region": "North",
+    "yearFounded": 1980,
+    "programs": ["Science", "Arts", "Sports"]
+  },
+  {
+    "id": 2,
+    "name": "Roosevelt Senior High",
+    "region": "West",
+    "yearFounded": 1990,
+    "programs": ["Business", "Science"]
+  },
+  {
+    "id": 3,
+    "name": "Jefferson High",
+    "region": "South",
+    "yearFounded": 1975,
+    "programs": ["Arts", "Technology"]
+  },
+  {
+    "id": 4,
+    "name": "Washington High",
+    "region": "East",
+    "yearFounded": 1988,
+    "programs": ["Sports", "Science"]
+  },
+  {
+    "id": 5,
+    "name": "Madison High School",
+    "region": "North",
+    "yearFounded": 2000,
+    "programs": ["Business", "Arts"]
+  },
+  {
+    "id": 6,
+    "name": "Kennedy Senior High",
+    "region": "West",
+    "yearFounded": 1995,
+    "programs": ["Science", "Technology"]
+  }
+]

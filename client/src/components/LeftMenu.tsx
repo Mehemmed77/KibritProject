@@ -1,4 +1,4 @@
-import { Box, Stack } from "@mui/material";
+import { Box } from "@mui/material";
 import { Drawer, List, ListItem, ListItemText, IconButton, useMediaQuery } from '@mui/material';
 import MenuIcon from '@mui/icons-material/Menu';
 import { useState } from 'react';
@@ -10,7 +10,7 @@ export default function LeftMenu() {
 
     const drawerContent = (
         <List>
-            <Link to="">
+            <Link to="/universities/">
                 <ListItem>
                     <ListItemText className="link" primary="Universities" />
                 </ListItem>
@@ -31,25 +31,34 @@ export default function LeftMenu() {
         </List>
     );
 
-    return <>
-        <Box display={"flex"}>
-            {!isDesktop && (
-                <IconButton onClick={() => setOpen(true)}>
-                    <MenuIcon />
-                </IconButton>
-            )}
+    const drawerWidth = "120px";
 
-            <Drawer
-                variant={isDesktop ? 'permanent' : 'temporary'}
+    return <>
+        {!isDesktop && (
+            <IconButton onClick={() => setOpen(true)}>
+                <MenuIcon />
+            </IconButton>)}
+
+        <Box display={"flex"} alignItems={"start"}>
+            <Drawer variant={isDesktop ? 'permanent' : 'temporary'} 
                 open={isDesktop ? true : open}
-                onClose={() => setOpen(false)}>
+                onClose={() => setOpen(false)}
+                sx={{
+                    width: drawerWidth,
+                    flexShrink: 0, 
+                    '& .MuiDrawer-paper': {
+                        width: drawerWidth,
+                        boxSizing: 'border-box',},}}>
+                
                 {drawerContent}
             </Drawer>
 
-            <Box flexGrow={2}>
-                <Outlet />
-            </Box>
+            <Box component="main" 
+                sx={{ flexGrow: 1, p: 3,...(isDesktop && {marginLeft: `${drawerWidth}px` }) }}>
 
+                <Outlet />
+
+            </Box>
         </Box>
-    </>
+    </>;
 }
