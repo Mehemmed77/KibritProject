@@ -43,16 +43,24 @@ app.get("/api/universities/", (req, res) => {
     res.json( {message: "Data of uni's has been sent", results} );
 });
 
+app.get("/api/highSchools/", (req, res) => {
+    const highSchools = JSON.parse(fs.readFileSync("./highSchools.json"));
+    
+    let results = highSchools;
+
+    if (req.query.programs) {
+        console.log(req.query.programs);
+        results = results.filter(u => u.programs.includes(req.query.programs));
+    }
+
+    res.json( {message: "Data of high schools has been sent", results});
+});
+
 app.get("/api/schools/", (req, res) => {
     const schools = JSON.parse(fs.readFileSync("./schools.json"));
 
     res.json( {message: "Data of schools has been sent", schools});
 });
 
-app.get("/api/highSchools/", (req, res) => {
-    const highSchools = JSON.parse(fs.readFileSync("./highSchools.json"));
-    
-    res.json( {message: "Data of high schools has been sent", highSchools});
-});
 
 app.listen(5000, () => console.log("Mock API on http://localhost:5000"));

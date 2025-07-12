@@ -1,12 +1,20 @@
 import { Box } from "@mui/material";
 import { Drawer, List, ListItem, ListItemText, IconButton, useMediaQuery } from '@mui/material';
 import MenuIcon from '@mui/icons-material/Menu';
-import { useState } from 'react';
-import { Link, Outlet } from "react-router-dom";
+import { useEffect, useState } from 'react';
+import { Link, Outlet, useNavigate } from "react-router-dom";
 
 export default function LeftMenu() {
     const [open, setOpen] = useState(false);
     const isDesktop = useMediaQuery('(min-width: 750px)');
+    const navigate = useNavigate();
+
+    useEffect(() => {
+        const isLoggedIn = sessionStorage.getItem("isLoggedIn");
+        if(!isLoggedIn) {
+            navigate("/login/");
+        }
+    }, [])
 
     const drawerContent = (
         <List>
