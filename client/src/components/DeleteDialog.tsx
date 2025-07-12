@@ -4,6 +4,7 @@ import DialogActions from '@mui/material/DialogActions';
 import DialogContent from '@mui/material/DialogContent';
 import DialogContentText from '@mui/material/DialogContentText';
 import DialogTitle from '@mui/material/DialogTitle';
+import axios from 'axios';
 
 interface DeleteDialogProps {
     open: boolean,
@@ -11,7 +12,14 @@ interface DeleteDialogProps {
 }
 
 export default function DeleteDialog( { open, handleClose }: DeleteDialogProps ) {
-  return (
+
+    const deleteRowFromServer = async () => {
+        const link = "http://localhost:5000/api/delete/";
+        const res = await axios.get(link);
+        console.log(res);
+    }
+
+    return (
         <Dialog open={open} onClose={() => handleClose(false)}>
             <DialogTitle id="alert-dialog-title">
                 Are you sure you want to delete this?
@@ -25,7 +33,10 @@ export default function DeleteDialog( { open, handleClose }: DeleteDialogProps )
             
             <DialogActions>
                 <Button onClick={() => handleClose(false)}>Disagree</Button>
-                <Button onClick={() => handleClose(true)} autoFocus>
+                <Button onClick={() => {
+                    handleClose(true);
+                    deleteRowFromServer();
+                }} autoFocus>
                     Agree
                 </Button>
             </DialogActions>

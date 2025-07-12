@@ -20,12 +20,27 @@ app.post("/api/login/", (req, res) => {
     }
 
     res.json({ message: "Successfully Logged In.", user: { username } });
-}); 
+});
+
+app.get("/api/delete/", (req, res) => {
+    res.send("DELETED!");
+})
 
 app.get("/api/universities/", (req, res) => {
     const universities = JSON.parse(fs.readFileSync("./universities.json"));
 
-    res.json( {message: "Data of uni's has been sent", universities} );
+    let results = universities;
+    console.log(req.query);
+
+    if (req.query.region) {
+        results = results.filter(u => u.region === req.query.region);
+    }
+
+    if (req.query.yearFounded) {
+        results = results.filter(u => u.yearFounded == req.query.yearFounded);
+    }
+
+    res.json( {message: "Data of uni's has been sent", results} );
 });
 
 app.get("/api/schools/", (req, res) => {

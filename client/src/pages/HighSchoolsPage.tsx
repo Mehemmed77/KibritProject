@@ -2,14 +2,13 @@ import { Box } from "@mui/material";
 import TableComponent from "../components/TableComponent";
 import type ColumnType from "../types/ColumnType";
 import { useEffect, useState } from "react";
-import type { University } from "../types/UniversityType";
 import axios from "axios";
 import MotionDivWrapper from "../components/MotionDivWrapper";
 import type { HighSchool } from "../types/HighSchoolType";
 
 export default function HighSchoolsPage() {
     const [loading, setLoading] = useState<boolean>(false);
-    const [universities, setUniversities] = useState<University[]>();
+    const [highSchools, setHighSchools] = useState<HighSchool[]>();
 
     const columns: ColumnType<HighSchool>[]  = [
         { key: "name", label: "Name" },
@@ -26,7 +25,7 @@ export default function HighSchoolsPage() {
                 const res = await axios.get(link);
                 const data = res.data;
 
-                setUniversities(data.highSchools);
+                setHighSchools(data.highSchools);
 
             } catch(e) {
                 console.log("Error occurred: " + e);
@@ -42,7 +41,7 @@ export default function HighSchoolsPage() {
     return (
         <MotionDivWrapper>
             <Box display={"flex"} alignItems={"center"}>
-                { loading ? "Data is loading please wait" : <TableComponent columns={columns} rows={universities} />}
+                { loading ? "Data is loading please wait" : <TableComponent columns={columns} rows={highSchools} />}
             </Box>
         </MotionDivWrapper>
     )

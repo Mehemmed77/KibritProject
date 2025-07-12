@@ -16,13 +16,13 @@ export default function LeftMenu() {
                 </ListItem>
             </Link>
             
-            <Link to="">
+            <Link to="/schools/">
                 <ListItem>
                     <ListItemText className="link" primary="Schools" />
                 </ListItem>
             </Link>
             
-            <Link to="">
+            <Link to="/highSchools/">
                 <ListItem>
                     <ListItemText className="link" primary="High Schools" />
                 </ListItem>
